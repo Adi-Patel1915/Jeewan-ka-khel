@@ -3,16 +3,16 @@ import numpy
 import random as rndm
 #--------------------
 game.init()
-Width = 1920
-Height = 1200
+Width = 500
+Height = 500
 
-CellSize = 20
+CellSize = 10
 StateColor = ((0, 0, 0), (255, 255, 255))
 Canvas = game.display.set_mode((Width, Height))
 game.display.set_caption("Game of Life X Game Theory")
 Switch = True
 Clock = game.time.Clock()
-FPS = 60 #FPS here
+FPS = 144 #FPS here
 #--------------------
 class CELL():
     def __init__(self, x, y): # will add a future parameter state
